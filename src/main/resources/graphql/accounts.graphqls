@@ -1,0 +1,22 @@
+
+extend type QueryType {
+
+  AccountByIdQuery(id:ID!) : Accounts
+  AllAccounts : [Accounts]
+}
+
+extend type MutationType {
+
+  insertAccountsMutation( id: ID!, name:String!, coursexid: String!, email: String!, section: String!): Accounts
+  deleteAccounts(id: ID!): String
+}
+
+
+
+type Accounts {
+    id: Int!
+    username: String!
+    coursexid: String!
+    email: String!
+    section: String!
+}

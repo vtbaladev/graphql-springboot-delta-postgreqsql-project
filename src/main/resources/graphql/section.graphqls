@@ -1,0 +1,18 @@
+
+type QueryType {
+   AllSections: [Section]
+   SectionById(id:ID!) : Section
+}
+
+type MutationType {
+
+  insertSectionMutation( sectionid: ID!, sectionName:String!, sectionXID: String!, courseXID: String!): Section
+  deleteSectionMutation(sectionid: ID!): String
+}
+
+type Section {
+    sectionid: Int!
+    sectionname: String!
+    sectionxid: String!
+    coursexid: String!
+}

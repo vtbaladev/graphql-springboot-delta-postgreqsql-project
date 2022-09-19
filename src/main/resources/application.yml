@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: graphql-springboot-delta-psql
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
